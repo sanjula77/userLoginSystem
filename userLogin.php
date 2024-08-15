@@ -9,44 +9,26 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
+<div class="container-fluid mt-5 pt-5">
+<form>
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-    <div class="col-md-6">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
-                <div class="d-flex align-items-center">
-                    <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <button type="submit" class="btn btn-primary ms-3">validate</button>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
-                <div class="d-flex align-items-center">
-                    <input type="password" class="form-control w-100" id="exampleInputPassword1">
-                    <button type="submit" class="btn btn-primary ms-3">validate</button>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label text-dark">Phone</label>
-                <div class="d-flex align-items-center">
-                    <input type="password" class="form-control w-100" id="exampleInputPassword1">
-                    <button type="submit" class="btn btn-primary ms-3">validate</button>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label text-dark">Username</label>
-                <div class="d-flex align-items-center">
-                    <input type="password" class="form-control w-100" id="exampleInputPassword1">
-                    <button type="submit" class="btn btn-primary ms-3">validate</button>
-                </div>
-            </div>
-        </form>
-    </div>
+  <div class="mb-3">
+    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="email">
+  </div>
+
+  <div class="mb-3">
+    <input type="password" class="form-control" id="password1" placeholder="password">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="check">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
 </div>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
