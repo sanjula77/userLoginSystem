@@ -5,7 +5,6 @@
     }
 }
 
-
 form{
     border: 1px solid black;
     border-radius: 35px;
@@ -37,4 +36,19 @@ form{
     outline: none;
     transition: .3s;
 }
-
+.divide-content-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color:#dfdfdf;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: dark;
+    padding-bottom: 5px;
+}
+.divider{
+    margin: 2rem 0;
+}
