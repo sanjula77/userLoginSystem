@@ -26,7 +26,7 @@
   </div>
 
  <div class="d-flex justify-content-center"><button type="submit" class="btn-primary"><span style="color: white;">Login</span></button></div>
-  <div class="text-center mt-3"><p>Dont have an account? <a href=""></a>Sign Up</p></div>
+  <div class="text-center mt-3"><p>Dont have an account? <a href="signUp.php">Sign Up</a></p></div>
 
   <div class="position-relative">
     <hr class="text-secondary divider">
