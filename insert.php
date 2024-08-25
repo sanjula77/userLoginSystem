@@ -6,6 +6,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $useName = htmlspecialchars($_POST["uName"]);
     $password = htmlspecialchars($_POST["pass"]);
     $confPass = htmlspecialchars($_POST["cnfmPass"]);
+if(empty($email)){
+exit();
+}
 
     echo $email;
     echo $useName;
