@@ -1,8 +1,21 @@
 <?php
-$con = new mysqli(hostname: "localhost", username: "root", password: "", database: "login_system");
-if($con){
-    echo "Connected Successfully";
-    }else{
-    die(mysqli_error($con));
+
+class Dbh{
+    private $hostname = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "login_system";
+
+    protected function connect() {
+        $dsn = 'mysql:host=' . $this -> hostname . '; dbname=' . $this -> database; 
+        $pdo = new PDO($dsn, $this -> username, $this -> password);
+        $pdo -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        return $pdo;
     }
-    ?>
+
+    public function setUserSmtp($email, $userName, $password_1, $password_2){
+        $sql = "INSERT INTO sign_up(email, username, password, conform_password) values(?, ?, ?, ?)";
+        $smtp = $this -> connect() -> prepare($sql);
+        $smtp -> execute([$email,$userName,$password_1,$password_2]);
+    }
+}
