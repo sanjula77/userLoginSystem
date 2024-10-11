@@ -29,19 +29,5 @@ class Dbh{
             echo "Error: " . $e->getMessage();
         }
     }
-
-    public function loginUser($email, $password) {
-        $sql = "SELECT * FROM sign_up WHERE email = ?";
-        $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$email]);
-
-        $user = $stmt->fetch();
-
-        if ($user && password_verify($password, $user['password'])) {
-            return $user;  
-        } else {
-            return false;  
-        }
-    }
     
 }
