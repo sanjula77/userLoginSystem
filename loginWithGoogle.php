@@ -35,3 +35,4 @@ if (!$client->getAccessToken()) {
     header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
     exit();
 }
+// hi
