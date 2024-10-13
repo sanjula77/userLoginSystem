@@ -5,8 +5,7 @@ session_start();
 
 // Create a new Google client
 $client = new Google_Client();
-$client->setClientId('296813048340-jjg4i8ecfig93fmigmcs6lcaqi8gh6mb.apps.googleusercontent.com');
-$client->setClientSecret('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');
+
 $client->setRedirectUri('http://localhost/practicalLoginSystem(GitHub)/loginWithGoogle.php');
 $client->addScope('email');
 $client->addScope('profile');
